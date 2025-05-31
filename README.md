@@ -9,6 +9,6 @@ NOTE: This is my personal config, it works for ME, don't just copy and paste and
 - `.config/hypr` — Hyprland and related config files
 - `.config/waybar` — Waybar status bar config
 - `.config/swaync` — sway notification center config
-- `.config/wofi` - wofi config
-- `.config/wlogout` - wlogout config
-- `wallpapers` - some awesome wallpapers
+- `.config/wofi` — wofi config
+- `.config/wlogout` — wlogout config
+- `wallpapers` — some awesome wallpapers
