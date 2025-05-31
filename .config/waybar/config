@@ -1,0 +1,35 @@
+{
+  "include": "~/.config/waybar/modules",
+  "layer": "top",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "reload_style_on_change": true,
+  "spacing": 0,
+  "fixed-center": true,
+  "margin-top": 6,
+  "margin-left": 8,
+  "margin-right": 8,
+  
+  "modules-left": [
+    "custom/logo",
+    "hyprland/workspaces",
+  ],
+  
+  "modules-center": [
+    "custom/menu",
+    "hyprland/window",
+    "custom/spotify",
+    "custom/lock",
+  ],
+  
+  "modules-right": [
+    "group/hardware",
+    "tray",
+    "group/network",
+    "custom/updates",
+    "group/battery",
+    "clock",
+    "group/trayer",
+  ],
+}

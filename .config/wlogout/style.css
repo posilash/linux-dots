@@ -1,0 +1,102 @@
+@import "../../.config/waybar/colors.css";
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    background-image: none;
+    font-size: 0px;
+}
+
+
+window {
+    background-color: transparent;
+}
+
+
+
+button {
+    background-color: alpha(@surface, .85);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+}
+
+
+button:hover {
+    background-color: alpha(@color12, .85);
+    background-size: 30%;
+    padding: 80px;
+    border: 10px solid @color5;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+}
+
+button:hover#lock {
+    border-radius: 160px 24px 24px 24px;
+    margin : 20px;
+}
+
+button:hover#logout {
+    border-radius: 24px;
+    margin : 20px;
+}
+
+button:hover#suspend {
+    border-radius: 24px 160px 24px 24px;
+    margin : 20px;
+}
+
+button:hover#hibernate {
+    border-radius: 24px 24px 24px 160px;
+    margin : 20px;
+}
+
+button:hover#shutdown {
+    border-radius: 24px;
+    margin : 20px;
+}
+
+button:hover#reboot {
+    border-radius: 24px 24px 160px 24px;
+    margin : 20px;
+}
+
+#lock {
+    background-image: url("icons/lock.png");
+    border-radius: 160px 24px 24px 24px;
+    margin : 4px;
+}
+
+#logout {
+    background-image: url("icons/logout.png");
+    border-radius: 24px 24px 24px 24px;
+    margin : 4px;
+}
+
+#suspend {
+    background-image: url("icons/suspend.png");
+    border-radius: 24px 160px 24px 24px;
+    margin : 4px;
+}
+
+#hibernate {
+    background-image: url("icons/hibernate.png");
+    border-radius: 24px 24px 24px 160px;
+    margin : 4px;
+}
+
+#shutdown {
+    background-image: url("icons/shutdown.png");
+    border-radius: 24px 24px 24px 24px;
+    margin : 4px;
+}
+
+#reboot {
+    background-image: url("icons/reboot.png");
+    border-radius: 24px 24px 160px 24px;
+    margin : 4px;    
+}
+

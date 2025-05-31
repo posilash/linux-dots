@@ -1,0 +1,263 @@
+@import '../../.cache/wal/colors-waybar.css';
+
+@import "colors.css";
+
+*{
+font-family: "FiraCode Nerd Font";
+font-weight: bold;
+min-height: 0;
+color: @color15;
+/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+font-size: 15px;
+font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+tooltip {
+    background: alpha(@color6, .4);
+    border-radius: 12px;
+    border: 2px solid @color5;    
+}
+
+tooltip label {
+    color: @surface;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+/*-----module groups----*/
+.modules-right {
+    border: 0px solid ;
+    border-radius: 10px;
+}
+
+.modules-center {
+    background-color: @surface;
+    border: 0px solid ;
+    border-radius: 10px;
+}
+
+.modules-left {
+    border: 0px solid ;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+
+
+/*-----modules left-----*/
+
+#custom-logo {
+    background: @surface;
+    border-radius: 10px 4px 4px 10px;
+    padding-right: 4px;
+    margin-right: 3px;
+}
+
+#workspaces {
+    background: @surface;
+    padding: 0px 10px 0px 4px;
+    border-radius: 4px 10px 10px 4px;
+}
+
+#workspaces button {
+    padding: 5px;
+    margin-left: 4px;
+}
+
+#workspaces button.active {
+    background: alpha(@color13, .5);
+    border-radius: 8px;
+    border: 3px solid @color5;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #010409;
+}
+
+#workspaces button.urgent {
+    background: alpha(@color9, .5);
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#workspaces button:hover {
+    border: 3px solid @on_primary;
+    border-radius: 8px;
+}
+
+
+
+/*-----modules center-----*/
+
+#window,
+#custom-menu,
+#custom-lock {
+    padding: 0px 10px;
+}
+
+#custom-spotify {
+    color: rgb(0,0,0);
+    padding: 0 20px;
+    background-color:#33C668 ;
+    border-radius: 15px;
+}
+
+#custom-spotify:hover {
+  border-radius: 12px;
+  border: 4px solid #1c5932;   
+}
+
+
+
+/*-----modules right-----*/
+
+@keyframes blink {
+  to {
+    color: #000000;
+  }
+}
+
+#cpu,
+#custom-asusprofile {
+    background: @surface;
+    font-size: 13px;
+    border-radius: 10px 4px 4px 10px;
+    padding: 0px 12px 0px 12px;
+    margin-right: 3px;
+}
+
+#custom-asusprofile {
+    margin-right: 2.1px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+#custom-asusprofile:hover {
+    border: 3px solid @on_primary;
+    background: alpha(@color13, .5);
+}
+
+#disk,
+#memory,
+#temperature {
+    background: @surface;
+    border-radius: 4px 4px 4px 4px;
+    margin-right: 2.1px;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+#temperature.critical {
+  color: @error_container;
+}
+
+#tray {
+    background-color: @surface;
+    padding: 0px 6px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#network {
+    background: @surface;
+    padding-left: 2px;
+    padding-right: 7px;
+}
+
+/*.not-network {
+  padding-right: 0px;
+}*/
+
+#custom-updates {
+    background-color: @surface;  
+    padding: 0px 2px;
+}
+
+#battery {
+    background: @surface;
+    padding: 0px 4px;
+    margin-bottom: 0px;
+    border-radius: 0px 4px 4px 0px;    
+}
+
+#battery.critical:not(.charging) {
+  color: @error_container;
+  margin: 5px 10px;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#battery.details,
+#network.details {
+   all: unset;
+   padding-left: 4px;
+   padding-right: 4px;
+   margin-bottom: -3px;
+}
+
+#clock {
+    background-color: @surface;
+    font-size: 13px;
+    padding: 0px 6px;
+    border-radius: 4px 4px 4px 4px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#custom-notification {
+    background: @surface;
+    font-family: "NotoSansMono Nerd Font";    
+    border-radius: 4px 10px 10px 4px;
+    padding: 0px 12px 0px 12px;
+    margin-left: 0px;
+}
+
+#pulseaudio,
+#pulseaudio.microphone {
+    background: @surface;    
+    border-radius: 4px 4px 4px 4px;
+    padding: 0px 14px;       
+    margin-right: 2.1px;
+}
+
+#bluetooth,
+#custom-power {
+    background: @surface;
+    border-radius: 4px 4px 4px 4px;
+    margin-right: 2.1px;
+    padding-left: 4px;
+    padding-right: 8px;
+}
+
+#bluetooth {
+    padding: 0px 14px;
+}
+
+#trayer .not-trayer > *:hover {
+  border: 3px solid @on_primary;
+  background: alpha(@color13, .5);
+}
+

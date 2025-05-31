@@ -1,0 +1,73 @@
+@import '.config/waybar/colors.css';
+@import '.cache/wal/colors-waybar.css';
+
+*{
+font-family: "FiraCode Nerd Font";
+min-height: 0;
+font-size: 18px;
+font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+padding: 0px;
+margin-top: 1px;
+margin-bottom: 1px;
+}
+
+
+#window {
+	background-color: alpha(@surface, .85);
+}
+
+#outer-box {
+	padding: 10px;
+}
+
+#input {
+	background-color: @color12;
+	color: @surface;
+	border-radius: 20px;
+	padding: 12px;
+}
+
+#scroll {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#img {
+	padding-right: 5px;
+	padding-left: 20px;
+	font-size: 30px;
+}
+
+#text {
+	color: @on_surface;
+	padding-left: 10px;
+}
+
+#text:selected {
+	color: @surface;
+}
+
+#entry {
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#entry:selected {
+	background-color: @color12;
+}
+
+#unselected {
+}
+
+#selected {
+}
+
+#input, #entry:selected {
+	border-radius: 20px;
+	border: 0px;
+}
+
+#input > image {
+       -gtk-icon-transform:scaleX(0);
+}
+
