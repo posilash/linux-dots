@@ -10,7 +10,6 @@
   font-size: 14px;
   font-family: "FiraCode Nerd Font";
   transition: 200ms;
-
 }
 
 .notification-background {
@@ -46,7 +45,7 @@
 .floating-notifications.background .notification-row .notification-background {
   background: alpha(@color10, .5);
   box-shadow: 1px 1px 5px rgba(0,0,0,.65);
-  border: 0px solid @selected;
+  border: 2px solid @color5;
   border-radius: 12px;
   margin: 16px;
   padding: 0;
@@ -78,7 +77,6 @@
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
   background-color: @hover;
-  border: 0px solid @selected;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
