@@ -1,0 +1,9 @@
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" width="480px" height="480px" xmlns:bx="https://boxy-svg.com"> 
+  <rect x="69.143" y="27.239" width="61.714" height="27.761" fill="black" rx="12" ry="12" style=""></rect>
+  <rect x="40" y="40" width="120" height="208.951" fill="black" rx="30" ry="30" style=""></rect>
+  <rect x="50" y="49.085" width="100" height="190.781" fill="white" rx="20" ry="20" style=""></rect>
+  <path d="M 89.374 85.542 Q 100 66.822 110.625 85.542 L 155.781 165.099 Q 166.406 183.819 145.156 183.819 L 54.843 183.819 Q 33.593 183.819 44.218 165.099 Z" bx:shape="triangle 33.593 66.822 132.813 116.997 0.5 0.16 1@30f7a26a" style="fill: white; stroke: red; stroke-width: 10px;"></path>
+  <rect x="93.5" y="100.5" width="13" height="39" style="fill: black; stroke: rgb(0, 0, 0);" rx="3.756" ry="3.756"></rect>
+  <ellipse style="fill: black; stroke: rgb(0, 0, 0);" cx="100" cy="154" rx="7" ry="7"></ellipse>
+  <rect x="54.838" y="214" width="90.325" height="18.953" style="fill: red; stroke: red;" rx="7.684" ry="7.684"></rect>
+</svg>
