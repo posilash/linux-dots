@@ -2,6 +2,8 @@
 
 iDIR="$HOME/.config/swaync/icons"
 
+PLAY_SOUND="canberra-gtk-play -i audio-volume-change"
+
 # Get Volume
 get_volume() {
 	volume=$(pamixer --get-volume)
@@ -30,11 +32,13 @@ notify_user() {
 # Increase Volume
 inc_volume() {
 	pamixer -i 2 && notify_user
+        ${PLAY_SOUND}
 }
 
 # Decrease Volume
 dec_volume() {
 	pamixer -d 2 && notify_user
+        ${PLAY_SOUND}
 }
 
 # Toggle Mute
@@ -43,6 +47,7 @@ toggle_mute() {
 		pamixer -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/volume-mute.png" "Speaker Muted"
 	elif [ "$(pamixer --get-mute)" == "true" ]; then
 		pamixer -u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Speaker Unmuted"
+		${PLAY_SOUND}
 	fi
 }
 
@@ -50,8 +55,10 @@ toggle_mute() {
 toggle_mic() {
 	if [ "$(pamixer --default-source --get-mute)" == "false" ]; then
 		pamixer --default-source -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/microphone-mute.png" "Mic Muted"
+		${PLAY_SOUND}
 	elif [ "$(pamixer --default-source --get-mute)" == "true" ]; then
 		pamixer -u --default-source u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/microphone.png" "Mic Unmuted"
+		${PLAY_SOUND}
 	fi
 }
 # Get icons
@@ -75,11 +82,13 @@ notify_mic_user() {
 # Increase MIC Volume
 inc_mic_volume() {
 	pamixer --default-source -i 5 && notify_mic_user
+	${PLAY_SOUND}
 }
 
 # Decrease MIC Volume
 dec_mic_volume() {
 	pamixer --default-source -d 5 && notify_mic_user
+	${PLAY_SOUND}
 }
 
 # Execute accordingly
