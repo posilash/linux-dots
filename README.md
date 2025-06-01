@@ -11,4 +11,5 @@ NOTE: This is my personal config, it works for ME, don't just copy and paste and
 - `.config/swaync` — sway notification center config
 - `.config/wofi` — wofi config
 - `.config/wlogout` — wlogout config
+- `.config/fastfetch` — fastfetch config
 - `wallpapers` — some awesome wallpapers
