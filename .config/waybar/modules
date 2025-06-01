@@ -207,7 +207,7 @@
 },
 
 "battery": {
-  "interval": 1,
+  "interval": 30,
   "full-at": 80,
   "design-capacity": false,
   "states": {
@@ -226,7 +226,7 @@
 "battery#details": {
   "format": "{capacity}% {time}",
   "max-length": 100,
-  "interval": 1,
+  "interval": 30,
   "tooltip": false,
 },
 
