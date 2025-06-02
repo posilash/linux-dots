@@ -8,12 +8,12 @@ Welcome to my personal dotfiles for a Wayland setup powered by **Hyprland** and 
 
 ## 📸 Showcase
 
-<img src="./screenshots/showcase_6.png" width="800"/>
+<img src="./screenshots/showcase_5.png" width="800"/>
 <img src="./screenshots/showcase_1.png" width="800"/>
 <img src="./screenshots/showcase_2.png" width="800"/>
 <img src="./screenshots/showcase_3.png" width="800"/>
 <img src="./screenshots/showcase_4.png" width="800"/>
-<img src="./screenshots/showcase_5.png" width="800"/>
+<img src="./screenshots/showcase_6.png" width="800"/>
 
 ---
 
