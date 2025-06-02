@@ -11,20 +11,9 @@ Welcome to my personal dotfiles for a Wayland setup powered by **Hyprland** and 
 
 ---
 
-## 📁 Contents
-
-- [`hypr`](.config/hypr) — Hyprland window manager and tools
-- [`waybar`](.config/waybar) — Status bar
-- [`swaync`](.config/swaync) — Notification center
-- [`wofi`](.config/wofi) — App launcher
-- [`wlogout`](.config/wlogout) — Power menu
-- [`fastfetch`](.config/fastfetch) — Terminal system info
-- [`wallpapers`](wallpapers) — My wallpaper collection
-- Colors and Theming done using `Pywal` and `Matugen`.
-
----
-
 ## 🔧 Components
+
+Colors and Theming done using `Pywal` and `Matugen`.
 
 <img src="https://img.shields.io/badge/Hyprland-58E1FF?style=flat&logo=hyprland&logoColor=white" alt="Hyprland badge" />
 <details>
