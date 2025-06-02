@@ -12,19 +12,18 @@
   "all-outputs": true,
   "sort-by-number": true,
   "format-icons": {
-    "1": " ",
-    "2": " ",
-    "3": " ",
-    "4": " ",
-    "5": "󰨞 ",
-    "6": " ",
-    "7": "  ",
-    "8": " ",
-    "9": " 󰓇 ",
-    "10": "  ",
-    "urgent": "  ",
-    "focused": "  ",
-    "default": "  ",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "7": "",
+    "8": "󰇮",
+    "9": "󰓇",
+    "10": "",
+    "urgent": "",
+    "default": "",
  },
   "window-rewrite-default": "",
   "window-rewrite": {
@@ -43,7 +42,7 @@
 "custom/menu": {
   "format": "",
   "tooltip": false,
-  "on-click": "$HOME/.config/hypr/scripts/WofiBig.sh",
+  "on-click": "$HOME/.config/hypr/scripts/WofiBig.sh & canberra-gtk-play -i message",
 },
 
 "hyprland/window": {
@@ -76,7 +75,7 @@
 
 "custom/lock": {
   "format": "",
-  "on-click": "sleep 0.5; hyprlock",
+  "on-click": "sleep 0.5; hyprlock & canberra-gtk-play -f ~/.config/swaync/sounds/wlogout.wav",
   "tooltip": false,
 },
 
@@ -100,13 +99,13 @@
     "exec": "~/.config/hypr/scripts/asus_profiles.sh",
     "format": "{}",
     "return-type": "json",
-    "interval": 5,
+    "interval": 1,
     "on-click": "~/.config/hypr/scripts/asus_profiles.sh next",
     "reload-on-click": true
 },
 
 "cpu": {
-  "format": " {usage}%",
+  "format": " {usage}%",
   "interval": 1,
   "max-length": 10,
   "on-click": "kitty -e btop --utf-force"
@@ -119,7 +118,7 @@
   "critical-threshold": 82,
   "format-critical": "{icon}{temperatureC}°C",
   "format": "{icon} {temperatureC}°C",
-  "format-icons": ["🌡"],
+  "format-icons": [""],
   "on-click-right": "kitty --title btop sh -c 'btop'"
 },
 
@@ -136,8 +135,8 @@
     "warning": 80
   },
   "interval": 5,
-  "format": "󰄦 {}%",
-  "format-alt": "󰄦 {used:0.1f}G%",
+  "format": " {}%",
+  "format-alt": " {used:0.1f}G%",
   "format-alt-click": "click",
   "tooltip": true,
   "tooltip-format": "{used:0.1f}G/{total:0.1f}G",
@@ -298,7 +297,7 @@
 "custom/power": {
   "format": "  ",
   "tooltip": false,
-  "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
+  "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown && canberra-gtk-play -f ~/.config/swaync/sounds/wlogout.wav",
 },
 
 "bluetooth": {

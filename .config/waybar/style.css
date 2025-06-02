@@ -77,8 +77,12 @@ tooltip label {
 }
 
 #workspaces button {
-    padding: 5px;
-    margin-left: 4px;
+}
+
+#workspaces button label {
+    font-size:18px;
+    min-width: 0;
+    padding: 4px 16px 4px 12px;
 }
 
 #workspaces button.active {
@@ -116,6 +120,12 @@ tooltip label {
     padding: 0px 10px;
 }
 
+#custom-menu:hover {
+    border: 3px solid @on_primary;
+    border-radius: 10px 4px 4px 10px;
+    background: alpha(@color13, .5);   
+}
+
 #custom-spotify {
     color: rgb(0,0,0);
     padding: 0 20px;
@@ -128,6 +138,11 @@ tooltip label {
   border: 4px solid #1c5932;   
 }
 
+#custom-lock:hover {
+    border: 3px solid @on_primary;
+    border-radius: 4px 10px 10px 4px;
+    background: alpha(@color13, .5);   
+}
 
 
 /*-----modules right-----*/

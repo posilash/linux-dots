@@ -14,6 +14,7 @@ if [[ "$1" == "next" ]]; then
     asusctl profile -n > /dev/null
     CURRENT_PROFILE=$(asusctl profile -p | tail -n1 | awk '{print tolower($NF)}')
     notify-send -i ${NOTI_ICON} -a "ASUS Profile" "ASUS Profile" "${CURRENT_PROFILE^} Mode"
+    canberra-gtk-play -f $HOME/.config/swaync/sounds/notify_1.wav
     exit 0
 fi
 

@@ -3,9 +3,10 @@
   
   "logo": {
     "source": "$HOME/.config/fastfetch/icons/jinx.png",
-    "height": 18,
+    "height": 12,
     "padding": {
     	"left": 2,
+    	"top": 1,
     },
   },
   "display": {
@@ -14,7 +15,7 @@
   "modules": [
     {
       "type": "title",
-      "key": "  ",
+      "key": " ",
       "format": "{6} {7} {8}",
     },
     {
